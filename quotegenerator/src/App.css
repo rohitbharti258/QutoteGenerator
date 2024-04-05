@@ -1,0 +1,159 @@
+#root, html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ); */
+  /* background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-motivational-quote-background-image-picture-image_1299238.jpg"); */
+  background-color: rgb(91, 8, 139);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  /* background: whitesmoke; */
+  background-color: #8c1aff;
+  width: 40vw;
+  height:60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 2%;
+  /* box-shadow: 10px 10px; */
+  overflow: hidden;
+  position: relative;
+  background: rgba(140,26,255,.7);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+.day{
+  color:white;
+  font-weight: 800;
+  font-style: italic;
+}
+.iconleft{
+  position: absolute;
+  top:50px;
+  left:30px;
+  color:white;
+}
+.iconright{
+  position: absolute;
+  bottom:80px;
+  right:30px;
+  color:white;
+
+}
+.heading {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  color: white;
+}
+
+.button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  /* border-radius: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* height: ; */
+  width: 210px;
+  opacity: 1;
+  background-color:transparent;
+  border: 1px solid white;
+  padding:10px;
+}
+  
+.button span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+  
+.button:hover {
+  animation: rotate 0.7s ease-in-out both;
+  /* background-color: aqua; */
+}
+  
+.button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+/*   
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+  
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}   */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: auto;
+    height: auto;
+    margin: 20px;
+  }
+  .iconleft,.iconright{
+  display: none;
+  }
+}
+

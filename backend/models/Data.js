@@ -2,7 +2,11 @@ const mongoose = require("mongoose");
 
 const DataSchema = new mongoose.Schema(
     {
-        data:{type:String,unique:true,required:true}
+        data:{
+            type:String,
+            unique:true,
+            required:true
+        }
         
     },
     {

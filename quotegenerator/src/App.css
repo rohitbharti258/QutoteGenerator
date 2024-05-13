@@ -13,6 +13,7 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -157,3 +158,73 @@
   }
 }
 
+/* Define styles for the button */
+button {
+  padding: 10px 20px;
+  margin:10px 0px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure the button is inline with the link */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Define styles for the link */
+button > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.add-quote-container {
+  height:100vh;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #f5f5f5;
+  flex-direction: column;
+}
+
+.add-quote-title {
+  text-align: center;
+
+  font-size: 24px;
+  color: #6a0dad; /* Purple color */
+  margin:10px 0;
+}
+
+.add-quote-input-container {
+  display: flex;
+  align-items: center;
+  margin:0 20px;
+}
+
+.add-quote-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.buttondiv{
+  display: flex;
+  justify-content: center;
+}
+.add-quote-button {
+  width:150px;
+  padding: 8px 20px;
+  background-color: #6a0dad; /* Purple color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-quote-button:hover {
+  background-color: #4b0780; /* Darker shade of purple on hover */
+}

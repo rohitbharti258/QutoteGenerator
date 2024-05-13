@@ -1,0 +1,58 @@
+ nav {
+    background-color: white;
+    padding: 10px 20px; 
+
+    
+    backdrop-filter: blur(10px); /* Apply blur effect to create glass-like appearance */
+    box-shadow: 0 4px 6px rgba(185, 12, 156, 0.1); /* Add shadow for depth */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline; 
+    margin-right: 20px; 
+  }
+  
+  li:last-child {
+    margin-right: 0;
+  }
+  
+  a {
+    color: rgb(91, 8, 139);
+    text-decoration: none; 
+  }
+ 
+
+
+  
+  .navbar ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add margin between list items */
+  }
+  
+  .navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+  }
+  
+  .navbar a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-style: italic; /* Add italic style to all links */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add text shadow for an appealing effect */
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
